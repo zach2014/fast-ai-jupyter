@@ -1,0 +1,9 @@
+version: "3.1"
+services:
+    jupyer-notebook:
+         image: jupyter/notebook
+         ports: 
+            - "8888:8888"
+         volumes:
+            - "./notebooks:/notebooks"
+         command: jupyter notebook 
